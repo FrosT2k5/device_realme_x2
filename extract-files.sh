@@ -14,7 +14,7 @@ fi
 set -e
 
 # Required!
-export DEVICE=RMX1921
+export DEVICE=RMX199X
 export DEVICE_COMMON=sdm710-common
 export VENDOR=realme
 
