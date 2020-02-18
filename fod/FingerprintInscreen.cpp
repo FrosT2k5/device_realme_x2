@@ -22,7 +22,10 @@
 #include <fstream>
 #include <cmath>
 
+#define FINGERPRINT_ERROR_VENDOR 8
+
 #define FP_PRESS_PATH "/sys/kernel/oppo_display/notify_fppress"
+#define FP_FORCEPRESS "/sys/kernel/oppo_display/force_screenfp"
 
 #define HBM_PATH "/sys/kernel/oppo_display/hbm"
 #define DIM_AMOUNT_PATH "/sys/kernel/oppo_display/dim_alpha"
@@ -81,12 +84,14 @@ Return<void> FingerprintInscreen::onFinishEnroll() {
 Return<void> FingerprintInscreen::onPress() {
     set(HBM_PATH, 1);
     set(FP_PRESS_PATH, 1);
+    set(FP_FORCEPRESS, 1);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onRelease() {
     set(HBM_PATH, 0);
     set(FP_PRESS_PATH, 0);
+    set(FP_FORCEPRESS, 0);
     return Void();
 }
 
@@ -97,6 +102,7 @@ Return<void> FingerprintInscreen::onShowFODView() {
 Return<void> FingerprintInscreen::onHideFODView() {
     set(HBM_PATH, 0);
     set(FP_PRESS_PATH, 0);
+    set(FP_FORCEPRESS, 0);
     return Void();
 }
 
@@ -107,7 +113,7 @@ Return<bool> FingerprintInscreen::handleAcquired(int32_t acquiredInfo, int32_t v
 
 Return<bool> FingerprintInscreen::handleError(int32_t error, int32_t vendorCode) {
     LOG(ERROR) << "error: " << error << ", vendorCode: " << vendorCode << "\n";
-    return false;
+    return error == FINGERPRINT_ERROR_VENDOR && vendorCode == 6;
 }
 
 Return<void> FingerprintInscreen::setLongPressEnabled(bool) {
