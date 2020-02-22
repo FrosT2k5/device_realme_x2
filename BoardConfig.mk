@@ -18,7 +18,6 @@ DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/realme/RMX199X
 TARGET_KERNEL_CONFIG := vendor/RMX1992_defconfig
-#TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
 
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
