@@ -10,7 +10,7 @@ include device/realme/sdm710-common/BoardConfigCommon.mk
 DEVICE_PATH := device/realme/RMX199X
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := RMX1993
+TARGET_OTA_ASSERT_DEVICE := RMX1991,RMX1991CN,RMX1992,RMX1993
 
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
