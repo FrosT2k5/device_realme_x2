@@ -9,7 +9,7 @@ set -e
 
 # Required!
 export DEVICE=RMX199X
-export DEVICE_COMMON=sdm710-common
+export DEVICE_COMMON=sm6150-common
 export VENDOR=realme
 
 export DEVICE_BRINGUP_YEAR=2019

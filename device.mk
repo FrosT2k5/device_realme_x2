@@ -27,8 +27,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-# Inherit from Realme sdm710-common
-$(call inherit-product, device/realme/sdm710-common/sdm710.mk)
+# Inherit from Realme sm6150-common
+$(call inherit-product, device/realme/sm6150-common/sm6150.mk)
 
 # Device init scripts
 PRODUCT_PACKAGES += \
