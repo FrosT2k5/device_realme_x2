@@ -623,3 +623,15 @@ vendor/lib64/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.scve.panorama@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
 vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so
+
+# Widevine DRM
+vendor/bin/hw/android.hardware.drm@1.1-service.widevine
+vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
+vendor/lib64/mediadrm/libwvdrmengine.so
+vendor/lib64/libhdcp1prov.so
+vendor/lib64/libhdcp2p2prov.so
+vendor/lib64/libhdcpsrm.so
+vendor/lib64/liboemcrypto.so
+vendor/lib/mediadrm/libwvdrmengine.so
+vendor/lib/liboemcrypto.so
+vendor/lib/libwvhidl.so
