@@ -599,3 +599,27 @@ vendor/lib64/vendor.oppo.hardware.mmdisplayfeature@1.0.so
 vendor/lib64/vendor.oppo.hardware.oiface@1.0.so
 vendor/lib64/vendor.oppo.hardware.wifi.sniffer@1.0.so
 vendor/lib64/vendor.oppo.hardware.wifi.supplicant@1.0.so
+
+# SCVE
+lib/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so
+lib/vendor.qti.hardware.scve.objecttracker@1.0.so
+lib/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so
+lib/vendor.qti.hardware.scve.panorama@1.0.so
+lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so
+lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
+lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so
+lib64/vendor.qti.hardware.scve.panorama@1.0.so
+vendor/bin/hw/vendor.qti.hardware.scve.objecttracker@1.0-service
+vendor/bin/hw/vendor.qti.hardware.scve.panorama@1.0-service
+vendor/etc/init/vendor.qti.hardware.scve.objecttracker@1.0-service.rc
+vendor/etc/init/vendor.qti.hardware.scve.panorama@1.0-service.rc
+vendor/lib/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so
+vendor/lib/hw/vendor.qti.hardware.scve.panorama@1.0-impl.so
+vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0-halimpl.so
+vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so
+vendor/lib/vendor.qti.hardware.scve.panorama@1.0-halimpl.so
+vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so
+vendor/lib64/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.scve.panorama@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
+vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so
