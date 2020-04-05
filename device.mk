@@ -30,10 +30,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Inherit from Realme sm6150-common
 $(call inherit-product, device/realme/sm6150-common/sm6150.mk)
 
-# Device init scripts
-PRODUCT_PACKAGES += \
-    init.target.rc
-
 # Fingerprint
 PRODUCT_PACKAGES += \
     lineage.biometrics.fingerprint.inscreen@1.0-service.RMX199X \
@@ -41,11 +37,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     vendor/lineage/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
-
-
-# HIDL
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/manifest.xml:system/etc/manifest.xml
 
 # Media
 PRODUCT_COPY_FILES += \
