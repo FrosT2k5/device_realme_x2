@@ -28,8 +28,5 @@ BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
 
-# VNDK
-BOARD_VNDK_RUNTIME_DISABLE := false
-
 # Inherit from the proprietary version
 -include vendor/realme/RMX199X/BoardConfigVendor.mk
