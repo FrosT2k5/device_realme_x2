@@ -32,7 +32,7 @@ $(call inherit-product, device/realme/sm6150-common/sm6150.mk)
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    lineage.biometrics.fingerprint.inscreen@1.0-service.RMX199X \
+    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.RMX199X \
     vendor.oppo.hardware.biometrics.fingerprint@2.1
 
 PRODUCT_COPY_FILES += \
