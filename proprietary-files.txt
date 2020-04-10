@@ -115,7 +115,6 @@ vendor/lib/libcapiv2svacnn.so
 vendor/lib/libcapiv2vop.so
 vendor/lib/libcom.qti.chinodeutils.so
 vendor/lib/libmpbase.so
-vendor/lib/libmm-omxcore.so
 vendor/lib/libSNPE.so
 vendor/lib/libsnpe_dsp_domains_v2.so
 vendor/lib/libSNPE_G.so
@@ -137,7 +136,6 @@ vendor/lib/libvideoutils.so
 vendor/lib/libvidhance.so
 vendor/lib/qcom.camera.log.so
 vendor/lib/voc.dat.zip
-vendor/lib/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib64/camera/com.qti.eeprom.truly_cmb433.so
 vendor/lib64/camera/com.qti.sensor.gc02m0b.so
 vendor/lib64/camera/com.qti.sensor.gc2375.so
@@ -252,11 +250,11 @@ vendor/lib64/libMegviiHumBokeh.so
 vendor/lib64/libMegviiHumBokehPost.so
 vendor/lib64/libmegvii_superiq.so
 vendor/lib64/libmpbase.so
-vendor/lib64/libmm-omxcore.so
 vendor/lib64/libSNPE.so
 vendor/lib64/libsnpeml.so
 vendor/lib64/libsnpe_dsp_domains_v2.so
 vendor/lib64/libSNPE_G.so
+vendor/lib64/libocam_common.so
 vendor/lib64/libsnpe_loader.so
 vendor/lib64/libsnsapi.so
 vendor/lib64/libsnsdiaglog.so
@@ -280,7 +278,6 @@ vendor/lib64/libVDPostureDetection.so
 vendor/lib64/libVDSuperPhotoAPI.so
 vendor/lib64/libVDUpScale.so
 vendor/lib64/libvidhance.so
-vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
 
 # Camera-arcsoft
 vendor/lib/libarcsoft_blink_detection_CoupleDis.so
@@ -381,16 +378,6 @@ vendor/firmware/widevine.b05
 vendor/firmware/widevine.b06
 vendor/firmware/widevine.b07
 vendor/firmware/widevine.mdt
-
-# ESE-Powermanager
-vendor/lib/vendor.qti.esepowermanager@1.0.so
-vendor/lib64/vendor.qti.esepowermanager@1.0.so
-
-# Fido
-vendor/lib/libFidoCrypto_vendor.so
-vendor/lib/libFIDOKeyProvisioning.so
-vendor/lib64/libFidoCrypto_vendor.so
-vendor/lib64/libFIDOKeyProvisioning.so
 
 # Fingerprint
 vendor/bin/hw/vendor.oppo.hardware.biometrics.face@1.0-service
@@ -599,30 +586,6 @@ vendor/lib64/vendor.oppo.hardware.mmdisplayfeature@1.0.so
 vendor/lib64/vendor.oppo.hardware.oiface@1.0.so
 vendor/lib64/vendor.oppo.hardware.wifi.sniffer@1.0.so
 vendor/lib64/vendor.oppo.hardware.wifi.supplicant@1.0.so
-
-# SCVE
-lib/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so
-lib/vendor.qti.hardware.scve.objecttracker@1.0.so
-lib/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so
-lib/vendor.qti.hardware.scve.panorama@1.0.so
-lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so
-lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
-lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so
-lib64/vendor.qti.hardware.scve.panorama@1.0.so
-vendor/bin/hw/vendor.qti.hardware.scve.objecttracker@1.0-service
-vendor/bin/hw/vendor.qti.hardware.scve.panorama@1.0-service
-vendor/etc/init/vendor.qti.hardware.scve.objecttracker@1.0-service.rc
-vendor/etc/init/vendor.qti.hardware.scve.panorama@1.0-service.rc
-vendor/lib/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.scve.panorama@1.0-impl.so
-vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0-halimpl.so
-vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so
-vendor/lib/vendor.qti.hardware.scve.panorama@1.0-halimpl.so
-vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so
-vendor/lib64/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.scve.panorama@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
-vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so
 
 # Widevine DRM
 vendor/bin/hw/android.hardware.drm@1.1-service.widevine
