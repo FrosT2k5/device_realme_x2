@@ -26,6 +26,8 @@
 /* Hardcoded stuffs */
 #define FP_PRESS_PATH "/sys/kernel/oppo_display/notify_fppress"
 #define DIMLAYER_PATH "/sys/kernel/oppo_display/dimlayer_hbm"
+#define NOTIFY_BLANK_PATH "/sys/kernel/oppo_display/notify_panel_blank"
+#define AOD_MODE_PATH "/sys/kernel/oppo_display/aod_light_mode_set"
 #define X_POS 442
 #define Y_POS 1969
 #define FP_SIZE 196
@@ -107,15 +109,16 @@ Return<void> FingerprintInscreen::onRelease() {
 Return<void> FingerprintInscreen::onShowFODView() {
     this->mFodCircleVisible = true;
     set(DIMLAYER_PATH, FP_BEGIN);
-    set(FP_PRESS_PATH, FP_ENDIT);
+    set(NOTIFY_BLANK_PATH, FP_BEGIN);
+    set(AOD_MODE_PATH, FP_ENDIT);
 
     return Void();
 }
 
 Return<void> FingerprintInscreen::onHideFODView() {
     this->mFodCircleVisible = false;
+    set(DIMLAYER_PATH, FP_BEGIN);
     set(FP_PRESS_PATH, FP_ENDIT);
-    set(DIMLAYER_PATH, FP_ENDIT);
 
     return Void();
 }
