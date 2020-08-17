@@ -653,4 +653,8 @@
         <item>1</item> <!-- COLOR_MODE_BOOSTED -->
         <item>2</item> <!-- COLOR_MODE_SATURATED -->
     </integer-array>
+
+    <!-- FOD Icon Dimming -->
+    <bool name="config_targetUsesInKernelDimming">false</bool>
+    
 </resources>
