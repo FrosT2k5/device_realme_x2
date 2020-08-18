@@ -6,11 +6,15 @@
 
 $(call inherit-product, device/realme/x2/device.mk)
 
-# Inherit PixelGApps
-$(call inherit-product-if-exists, vendor/gapps/gapps.mk)
+# GApps
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
+IS_PHONE := true
+USE_MESSAGING := true
+
+# Inherit GApps
+$(call inherit-product-if-exists, vendor/gapps/config.mk)
 
 # #boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
