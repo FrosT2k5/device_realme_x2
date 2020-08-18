@@ -14,7 +14,7 @@ IS_PHONE := true
 USE_MESSAGING := true
 
 # Inherit GApps
-$(call inherit-product-if-exists, vendor/gapps/config.mk)
+#$(call inherit-product-if-exists, vendor/gapps/config.mk)
 
 # #boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
